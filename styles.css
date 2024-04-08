@@ -62,9 +62,10 @@ h1 span {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
+  line-height: 1.3;
 }
 
 .container {
