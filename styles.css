@@ -1,0 +1,137 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+:root {
+  --green: rgb(101, 141, 27);
+  --blue: #007698;
+  --coral: #f6947b;
+  --orange: #d85b3b;
+  --mustard: #ddad00;
+  --header-blue: #005778;
+
+  --alpha: 0.7;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #1b1a1a;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--header-blue);
+  height: 125px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+header .logo {
+  width: 18.75rem;
+}
+
+nav {
+  width: 65%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+nav ul li {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home-hero {
+  background: url(./img/rff-home-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.home-intro {
+  width: 60%;
+}
+
+.intro {
+ background-color: var(--blue);
+ color: #fff;
+ margin: 50px 0;
+ padding: 30px 0;
+}
+
+.home-list {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
