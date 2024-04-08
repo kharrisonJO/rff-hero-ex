@@ -1,0 +1,19 @@
+
+/*======= Slideshow ========= */
+
+#slideshow {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+#slideshow img {
+  min-width: 100%;
+  min-height: 100%;
+}
