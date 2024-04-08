@@ -1,0 +1,72 @@
+/* HERO 2 STYLES */
+
+#CrossFade {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+}
+#CrossFade img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: #000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 0;
+  transform: scale(1.4) rotate(12deg);
+  -webkit-animation: CrossFade 24s infinite;
+          animation: CrossFade 24s infinite;
+}
+#CrossFade img:nth-child(3) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+#CrossFade img:nth-child(2) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+#CrossFade img:nth-child(1) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1em;
+  padding: 0.2em 0.6em;
+  cursor: pointer;
+  color: #fff;
+  font-size: 3em;
+  max-width: 26em;
+  text-align: left;
+}
+.hero-text h1 {
+  margin-bottom: 0.5em;
+  line-height: 1;
+  font-weight: 100;
+}
+
+@-webkit-keyframes CrossFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
+}
+@keyframes CrossFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
+}
